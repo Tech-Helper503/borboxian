@@ -16,5 +16,10 @@ class Scene():
         for entity in scene.entities:
             entity.enabled = True
         
+        self.is_current_scene = False
         scene.is_current_scene = True
+    
+    def update(self):
+        pass
+
     
