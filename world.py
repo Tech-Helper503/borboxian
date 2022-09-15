@@ -22,7 +22,7 @@ class World(Scene):
 
 
         noiseScale  = 0.02
-        scale = 20
+        scale = 60
         noise = PerlinNoise()
 
         class Task(Button):
@@ -96,7 +96,7 @@ class World(Scene):
 
         vel = 10
         self.player = FirstPersonController(speed=vel)
-        sky = Sky()
+        sky = Sky(texture=sky_texture)
         self.hand = Hand()
 
     def update(self):
